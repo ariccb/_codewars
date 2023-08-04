@@ -1,0 +1,19 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "find-the-parity-outlier.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariccb/_codewars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariccb/_codewars/issues"
+  },
+  "homepage": "https://github.com/ariccb/_codewars#readme"
+}
