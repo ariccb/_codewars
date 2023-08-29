@@ -10,15 +10,20 @@
 // Should return: 160 (the only even number)
 
 function findOutlier(integers) {
+  // create empty arrays to store the even and odd numbers as we iterate through the integers array
   let oddNumbers = [];
   let evenNumbers = [];
   for (let i = 0; i < integers.length; i++) {
+    // if the integer is even, push it to the evenNumbers array
     if (integers[i] % 2 === 0) {
       evenNumbers.push(integers[i]);
     } else {
+      // if the integer is odd, push it to the oddNumbers array
       oddNumbers.push(integers[i]);
       console.log("integers", integers);
     }
+    // if both evenNumbers and oddNumbers arrays have a length of at least 1, return the first element of the array that has a length greater than 1
+    // this stops the loop from running for longer than it needs to
     if ((oddNumbers.length >= 1 && evenNumbers.length > 1) || (oddNumbers.length > 1 && evenNumbers.length >= 1)) {
       if (evenNumbers.length === 1) {
         console.log("evenNumbers", evenNumbers);
@@ -30,4 +35,13 @@ function findOutlier(integers) {
       }
     }
   }
+}
+
+// this function will add all the numbers in the oddNumbers array
+function addOddNumbers(oddNumbers) {
+  let sum = 0;
+  for (let i = 0; i < oddNumbers.length; i++) {
+    sum += oddNumbers[i];
+  }
+  return sum;
 }
